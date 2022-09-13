@@ -2,6 +2,9 @@
   "name": "mern-tracker",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "16.13.2"
+  },
   "dependencies": {
     "axios": "^0.26.1",
     "bootstrap": "^4.3.1",
