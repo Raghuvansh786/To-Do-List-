@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, {  useUnifiedTopology: true   }
+mongoose.connect(uri || 'mongodb+srv://NewUser:T69u2GpMHTJsjPKj@portfolio.gacponj.mongodb.net/TodoApp?retryWrites=true&w=majority', {  useUnifiedTopology: true   }
 );
 const connection = mongoose.connection;
 connection.once('open', () => {
