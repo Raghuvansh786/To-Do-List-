@@ -31,7 +31,7 @@ export default class CreateTodo extends Component {
 
     console.log(activityvar);
 
-    axios.post("http://localhost:5002/todos/add", activityvar).then((res) => {
+    axios.post("/todos/add", activityvar).then((res) => {
       window.location = "/";
     });
   }

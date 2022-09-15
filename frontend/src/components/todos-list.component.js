@@ -26,7 +26,7 @@ export default class TodosList extends Component {
     // this.setState({
     //   todos: [{activity:'t1'},{activity:'t2'},{activity:'t3'}]
     // })
-    axios.get('http://localhost:5002/todos/')
+    axios.get('/todos/')
       .then(response => {
         this.setState({ todos: response.data })
       })
@@ -36,7 +36,7 @@ export default class TodosList extends Component {
   }
 
   deleteTodo(id) {
-    axios.delete('http://localhost:5002/todos/'+id)
+    axios.delete('/todos/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
