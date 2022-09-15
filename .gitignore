@@ -10,11 +10,13 @@ backend/node_modules
 /coverage
 
 # production
+frontend/build
 
 ## no Classwork 
 Class Notes - MERN.pdf
 Procfile
 README.md
+.env
 yarn.lock   
 
 # misc
