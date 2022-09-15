@@ -10,7 +10,7 @@ backend/node_modules
 /coverage
 
 # production
-/frontend/build
+/build
 
 ## no Classwork 
 Class Notes - MERN.pdf
