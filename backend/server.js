@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
-const port = 5002;
+const port = process.env.PORT || 5002;
 
 app.use(cors());
 app.use(express.json());
@@ -23,7 +23,7 @@ const todoRouter = require('./routes/todos');
 app.use('/todos', todoRouter);
 
 if(process.env.NODE_ENV==='production'){
-    app.use(express.static('build'))
+    app.use(express.static('frontend/build'))
 }
 
 
